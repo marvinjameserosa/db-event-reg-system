@@ -4,32 +4,32 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <nav className="w-full bg-white">
+    <nav className="w-full bg-gradient-to-b from-[#4A0E0E] to-[#A61B1B] to-100%">
       <div className="max-w-[1360px] mx-auto px-4">
         <div className="flex items-center h-16">
-          <Link href="/discover" className="font-bold text-2xl mr-auto">Logo</Link>
+          <Link href="/discover" className="font-bold text-2xl mr-auto text-gray-300">Logo</Link>
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-4 mr-80">
               <Link href="/discover">
                 <Button variant="ghost" size="default">
-                  <Compass className="h-5 w-5 mr-2" />
+                  <Compass className="h-5 w-5 mr-2 text-gray-500" />
                   Discover
                 </Button>
               </Link>
               <Link href="/events">
                 <Button variant="ghost" size="default">
-                  <Calendar className="h-5 w-5 mr-2" />
+                  <Calendar className="h-5 w-5 mr-2 text-white" />
                   Events
                 </Button>
               </Link>
             </div>
             <Button variant="ghost" size="icon">
               <Search className="h-5 w-5" />
-              <span className="sr-only">Search</span>
+              <span className="sr-only ext-gray-500">Search</span>
             </Button>
             <Button variant="ghost" size="icon">
               <Bell className="h-5 w-5" />
-              <span className="sr-only">Notifications</span>
+              <span className="sr-only ext-gray-500">Notifications</span>
             </Button>
             <Link href="/createEvent">
               <Button>

@@ -3,8 +3,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import * as React from "react"
 import Link from "next/link";
-import Header from "@/components/ui/header/header";
-import { EventSheet } from "@/components/ui/eventSheet/eventSheet";
+{/*import Header from "@/components/ui/header/header";
+import { EventSheet } from "@/components/ui/eventSheet/eventSheet";*/}
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator"
 import { useState } from "react";
@@ -56,29 +56,29 @@ export default function PupBranches() {
 
   return (
 
-       <div className="mx-80 p-2">
+       <div className="mx-80 p-2 ">
            
 
             {/*-------------------------------------------EXPLORE PUP BRANCH EVENT SECTION---------------------------------- */}
             <div className="p-1">
               <Tabs defaultValue="account" className="w-full"> 
-                <h3 className="text-red-800"><b>Explore PUP Branch Events</b></h3>
+                <h3 className="text-gray-100"><b>Explore PUP Branch Events</b></h3>
 
                 {/*------------------PUP BRANCHES------------- */}
-                  <TabsList>
-                    <TabsTrigger value="metromanila">Metro Manila</TabsTrigger>
+                  <TabsList className="bg-transparent text-gray-100">
+                    <TabsTrigger value="metromanila" >Metro Manila</TabsTrigger>
                     <TabsTrigger value="centralluzon">Central Luzon</TabsTrigger>
                     <TabsTrigger value="southluzon">South Luzon</TabsTrigger>
                   </TabsList>
 
                   {/*------------------PUP BRANCH CONTENTS------------- */}
                   {/*------Metro Manila---------- */}
-                  <TabsContent value="metromanila" className="p-2 ">
+                  <TabsContent value="metromanila" className="p-2">
                     <div className="grid grid-cols-3 grid-rows-2 gap-x-4 gap-y-4 w-full">
                       {/* Parañaque City */}
                       <div >
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -92,8 +92,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Parañaque City</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Parañaque City</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -103,7 +103,7 @@ export default function PupBranches() {
                       {/* Quezon City */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -117,8 +117,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Quezon City</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Quezon City</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -128,7 +128,7 @@ export default function PupBranches() {
                       {/* San Juan City */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -142,8 +142,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">San Juan City</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">San Juan City</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -154,7 +154,7 @@ export default function PupBranches() {
                     {/* Taguig City */}
                     <div className="-mt-[50px]">
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 w-1/3 border-none">
+                          <Card className="flex items-center p-2 space-x-2 w-1/3 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -168,8 +168,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Taguig City</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Taguig City</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -183,7 +183,7 @@ export default function PupBranches() {
                       {/* Bataan */}
                       <div >
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -197,8 +197,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Bataan</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Bataan</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -208,7 +208,7 @@ export default function PupBranches() {
                       {/* Sta. Maria Bulacan */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -222,8 +222,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Sta. Maria Bulacan</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Sta. Maria Bulacan</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -233,7 +233,7 @@ export default function PupBranches() {
                       {/* Pulilan, Bulacan */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -247,8 +247,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Pulilan, Bulacan</p>
-                                <p className="text-red-800 text-sm text-opacity-75">25 Events</p>
+                                <p className="text-gray-100 font-bold">Pulilan, Bulacan</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">25 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -259,7 +259,8 @@ export default function PupBranches() {
                     {/* Cabiao, Nueva Ecija */}
                     <div className="-mt-[50px]">
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 w-1/3 border-none">
+                          <Card className="flex items-center p-2 space-x-2 w-1/3 border-none bg-transparent">
+                          
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -273,8 +274,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Cabiao, Nueva Ecija</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Cabiao, Nueva Ecija</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -291,7 +292,7 @@ export default function PupBranches() {
                       {/* Lopez, Quezon */}
                       <div >
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -305,8 +306,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Lopez, Quezon</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Lopez, Quezon</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -316,7 +317,7 @@ export default function PupBranches() {
                       {/* Mulanay, Quezon */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -330,8 +331,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Mulanay, Quezon</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Mulanay, Quezon</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -341,7 +342,7 @@ export default function PupBranches() {
                       {/* Unisan, Quezon */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -355,8 +356,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Unisan, Quezon </p>
-                                <p className="text-red-800 text-sm text-opacity-75">25 Events</p>
+                                <p className="text-gray-100 font-bold">Unisan, Quezon </p>
+                                <p className="text-gray-100 text-sm text-opacity-75">25 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -369,7 +370,7 @@ export default function PupBranches() {
                       {/* Ragay, Camarines Sur */}
                       <div >
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -383,8 +384,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Ragay, Camarines Sur</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Ragay, Camarines Sur</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -394,7 +395,7 @@ export default function PupBranches() {
                       {/* Sto. Tomas, Batangas */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -408,8 +409,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Sto. Tomas, Batangas</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Sto. Tomas, Batangas</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -419,7 +420,7 @@ export default function PupBranches() {
                       {/* Maragondon, Cavite */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -433,8 +434,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Maragondon, Cavite</p>
-                                <p className="text-red-800 text-sm text-opacity-75">25 Events</p>
+                                <p className="text-gray-100 font-bold">Maragondon, Cavite</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">25 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -447,7 +448,7 @@ export default function PupBranches() {
                       {/* Bansud, Oriental Mindoro */}
                       <div >
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -461,8 +462,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Bansud, Oriental Mindoro</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Bansud, Oriental Mindoro</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -472,7 +473,7 @@ export default function PupBranches() {
                       {/* Sablayan, Occidental Mindoro */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -486,8 +487,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Sablayan, Occidental Mindoro</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Sablayan, Occidental Mindoro</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -497,7 +498,7 @@ export default function PupBranches() {
                       {/* Binan, Laguna */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -511,8 +512,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Binan, Laguna</p>
-                                <p className="text-red-800 text-sm text-opacity-75">25 Events</p>
+                                <p className="text-gray-100 font-bold">Binan, Laguna</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">25 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -525,7 +526,7 @@ export default function PupBranches() {
                       {/* San Pedro, Laguna */}
                       <div >
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -539,8 +540,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">San Pedro, Laguna</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">San Pedro, Laguna</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -550,7 +551,7 @@ export default function PupBranches() {
                       {/* Sta. Rosa, Laguna */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -564,8 +565,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Sta. Rosa, Laguna</p>
-                                <p className="text-red-800 text-sm text-opacity-75">10 Events</p>
+                                <p className="text-gray-100 font-bold">Sta. Rosa, Laguna</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">10 Events</p>
                               </CardContent>
                             </div>
                           </Card>
@@ -575,7 +576,7 @@ export default function PupBranches() {
                       {/* Calauan, Laguna */}
                       <div>
                         <Link href="/samplePage">
-                          <Card className="flex items-center p-2 space-x-2 border-none">
+                          <Card className="flex items-center p-2 space-x-2 border-none bg-transparent">
                             {/* Image Section */}
                             <div className="w-12 h-12">
                               <Image
@@ -589,8 +590,8 @@ export default function PupBranches() {
                             {/* Text Section */}
                             <div className="w-auto">
                               <CardContent className="p-0">
-                                <p className="text-red-800 font-bold">Calauan, Laguna</p>
-                                <p className="text-red-800 text-sm text-opacity-75">25 Events</p>
+                                <p className="text-gray-100 font-bold">Calauan, Laguna</p>
+                                <p className="text-gray-100 text-sm text-opacity-75">25 Events</p>
                               </CardContent>
                             </div>
                           </Card>

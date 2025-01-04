@@ -8,10 +8,11 @@ import {
   SheetClose,
   SheetContent,
   SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
+  SheetFooter,
   SheetTrigger,
+
 } from "@/components/ui/sheet"
 import {
   Card,
@@ -56,7 +57,7 @@ export function EventSheet() {
   }
 
   return (
-    <div className="mx-80 p-2">
+    <div className="mx-80 p-2 from-transparent">
       <div>
         <Carousel className="w-full min-w-min">
           <h2 className="text-red-800">
@@ -68,7 +69,7 @@ export function EventSheet() {
             <CarouselItem className="md:basis-1/1 lg:basis-1/2">
               <div className="p-1" onClick={handleSheetOpen}>
                 {/* Open the sheet when clicked */}
-                <Card className="inline-flex items-center p-2 space-x-2 border-none">
+                <Card className="inline-flex items-center p-2 space-x-2 border-none bg-transparent">
                   <div className="w-1/2">
                     <Image
                       src="/discover-images/event1.png"
@@ -78,15 +79,15 @@ export function EventSheet() {
                       height={180}
                     />
                   </div>
-                  <div className="w-1/2 p-2">
-                    <CardContent className="p-0">
-                      <p className="text-red-800">
+                  <div className="w-1/2 p-2 bg-transparent">
+                    <CardContent className="p-0 bg-transparent">
+                      <p className="text-gray-300">
                         <b>CPE FAIR 2025: Grand Prix</b>
                       </p>
-                      <p className="text-red-800 text-opacity-80 text-sm">
+                      <p className="text-gray-300 text-opacity-80 text-sm">
                         Today, 8:00 am
                       </p>
-                      <p className="text-red-800 text-opacity-80 text-sm">
+                      <p className="text-gray-300 text-opacity-80 text-sm">
                         NDC Court
                       </p>
                     </CardContent>
@@ -99,7 +100,7 @@ export function EventSheet() {
             <CarouselItem className="md:basis-1/1 lg:basis-1/2">
               <div className="p-1" onClick={handleSheetOpen}>
                 {/* Open the sheet when clicked */}
-                <Card className="inline-flex items-center p-2 space-x-2 border-none">
+                <Card className="inline-flex items-center p-2 space-x-2 border-none bg-transparent">
                   <div className="w-1/2">
                     <Image
                       src="/discover-images/event1.png"
@@ -109,15 +110,15 @@ export function EventSheet() {
                       height={180}
                     />
                   </div>
-                  <div className="w-1/2 p-2">
-                    <CardContent className="p-0">
-                      <p className="text-red-800">
+                  <div className="w-1/2 p-2 bg-transparent">
+                    <CardContent className="p-0 bg-transparent">
+                      <p className="text-gray-300">
                         <b>CPE FAIR 2025: Grand Prix</b>
                       </p>
-                      <p className="text-red-800 text-opacity-80 text-sm">
+                      <p className="text-gray-300 text-opacity-80 text-sm">
                         Today, 8:00 am
                       </p>
-                      <p className="text-red-800 text-opacity-80 text-sm">
+                      <p className="text-gray-300 text-opacity-80 text-sm">
                         NDC Court
                       </p>
                     </CardContent>
@@ -130,7 +131,7 @@ export function EventSheet() {
             <CarouselItem className="md:basis-1/1 lg:basis-1/2">
               <div className="p-1" onClick={handleSheetOpen}>
                 {/* Open the sheet when clicked */}
-                <Card className="inline-flex items-center p-2 space-x-2 border-none">
+                <Card className="inline-flex items-center p-2 space-x-2 border-none bg-transparent">
                   <div className="w-1/2">
                     <Image
                       src="/discover-images/event1.png"
@@ -140,15 +141,15 @@ export function EventSheet() {
                       height={180}
                     />
                   </div>
-                  <div className="w-1/2 p-2">
-                    <CardContent className="p-0">
-                      <p className="text-red-800">
+                  <div className="w-1/2 p-2 bg-transparent">
+                    <CardContent className="p-0 bg-transparent">
+                      <p className="text-gray-300">
                         <b>CPE FAIR 2025: Grand Prix</b>
                       </p>
-                      <p className="text-red-800 text-opacity-80 text-sm">
+                      <p className="text-gray-300 text-opacity-80 text-sm">
                         Today, 8:00 am
                       </p>
-                      <p className="text-red-800 text-opacity-80 text-sm">
+                      <p className="text-gray-300 text-opacity-80 text-sm">
                         NDC Court
                       </p>
                     </CardContent>
@@ -161,7 +162,7 @@ export function EventSheet() {
             <CarouselItem className="md:basis-1/1 lg:basis-1/2">
               <div className="p-1" onClick={handleSheetOpen}>
                 {/* Open the sheet when clicked */}
-                <Card className="inline-flex items-center p-2 space-x-2 border-none">
+                <Card className="inline-flex items-center p-2 space-x-2 border-none bg-transparent">
                   <div className="w-1/2">
                     <Image
                       src="/discover-images/event1.png"
@@ -171,15 +172,15 @@ export function EventSheet() {
                       height={180}
                     />
                   </div>
-                  <div className="w-1/2 p-2">
-                    <CardContent className="p-0">
-                      <p className="text-red-800">
+                  <div className="w-1/2 p-2 bg-transparent">
+                    <CardContent className="p-0 bg-transparent">
+                      <p className="text-gray-300">
                         <b>CPE FAIR 2025: Grand Prix</b>
                       </p>
-                      <p className="text-red-800 text-opacity-80 text-sm">
+                      <p className="text-gray-300 text-opacity-80 text-sm">
                         Today, 8:00 am
                       </p>
-                      <p className="text-red-800 text-opacity-80 text-sm">
+                      <p className="text-gray-300 text-opacity-80 text-sm">
                         NDC Court
                       </p>
                     </CardContent>
@@ -188,37 +189,36 @@ export function EventSheet() {
               </div>
             </CarouselItem>
 
-
             {/* Sheet (Triggered by Card Click) */}
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-              <SheetContent className="md:basis-1/1 lg:basis-1/2 bg-red-300">
+              <SheetContent className="md:basis-1/1 lg:basis-1/2 bg-gradient-to-b from-[#4A0E0E] to-[#A61B1B] to-99%">
                 <SheetHeader>
-                  <SheetTitle >Register to Event</SheetTitle>
-                  <SheetDescription className="text-gray-900">
+                  <SheetTitle className="text-gray-300">Register to Event</SheetTitle>
+                  <SheetDescription className="text-gray-500">
                     This section is still for consultation. Click the register button to register
                   </SheetDescription>
                 </SheetHeader>
                 <div className="p-2 justify-center">
-                    <Image
-                      src="/discover-images/event1.png"
-                      alt="Image"
-                      className="rounded-md object-cover"
-                      width={2000}
-                      height={180}
-                    />
-                  </div>
-                  <p className="text-red-800">
-                        <b>CPE FAIR 2025: Grand Prix</b>
-                      </p>
-                      <p className="text-red-800 text-opacity-80 text-sm">
-                        Today, 8:00 am
-                      </p>
-                      <p className="text-red-800 text-opacity-80 text-sm">
-                        NDC Court
-                      </p>
+                  <Image
+                    src="/discover-images/event1.png"
+                    alt="Image"
+                    className="rounded-md object-cover"
+                    width={2000}
+                    height={180}
+                  />
+                </div>
+                <p className="text-gray-400">
+                  <b>CPE FAIR 2025: Grand Prix</b>
+                </p>
+                <p className="text-gray-400 text-opacity-80 text-sm">
+                  Today, 8:00 am
+                </p>
+                <p className="text-gray-400 text-opacity-80 text-sm">
+                  NDC Court
+                </p>
                 <div className="grid gap-4 py-4">
                   <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="name" className="text-right">
+                    <Label htmlFor="name" className="text-right text-gray-400">
                       Name
                     </Label>
                     {/* Controlled input for the name field */}
@@ -230,7 +230,7 @@ export function EventSheet() {
                     />
                   </div>
                   <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="username" className="text-right">
+                    <Label htmlFor="username" className="text-right text-gray-400">
                       Username
                     </Label>
                     {/* Controlled input for the username field */}
@@ -244,16 +244,21 @@ export function EventSheet() {
                 </div>
                 <SheetFooter>
                   <SheetClose asChild>
-                    <Button type="submit" onClick={handleSheetClose} className="" variant={"secondary"}>
-                      Register
+                    <Button
+                      type="submit"
+                      onClick={handleSheetClose}
+                      className="text-red-200"
+                      
+                    >
+                      Request to join
                     </Button>
                   </SheetClose>
                 </SheetFooter>
               </SheetContent>
             </Sheet>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="bg-transparent border-transparent text-white hover:text-red-800"/>
+          <CarouselNext className="bg-transparent border-transparent text-white hover:text-red-800" />
         </Carousel>
       </div>
     </div>
